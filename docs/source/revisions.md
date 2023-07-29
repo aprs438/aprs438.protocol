@@ -1,4 +1,4 @@
-# Major Revisions
+# Protocol Revisions
 
 |date|changes|
 |:--:|:------|

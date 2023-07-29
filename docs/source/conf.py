@@ -13,6 +13,7 @@ version = '2023.07'
 
 extensions = [
     'myst_parser',
+    'sphinx_favicon',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',

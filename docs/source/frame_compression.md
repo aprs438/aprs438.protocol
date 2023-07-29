@@ -19,3 +19,15 @@ As a physical layer, LoRa permits sending any of the [256 characters](https://en
 - _Source Address, SSID_ and _Data Type ID_ can be compressed into only 5 payload bytes, compared to 26 payload bytes with OE5BPA firmware.
 - It is customary to compress latitude, longitude, symbol, course and speed using [Base91](https://en.wikipedia.org/wiki/List_of_numeral_systems#Standard_positional_numeral_systems), which results in another 13 payload bytes; _Data Type ID_ not included. **APRS&nbsp;434** will not differ in this respect.
 - If APRS Mic-E compression were to be used instead, that would require another 16 payload bytes to compress latitude, longitude, symbol, course and speed; 7&nbsp;bytes in the superfluous _Destination&nbsp;Address_ and 9&nbsp;bytes in the _Information&nbsp;Field; Data Type ID_ included. Hence, this is not a good option.
+
+```{toctree}
+measurable_benefits.md
+link_parameters.md
+callsign-ssid-path-data_type.md
+geolocation.md
+weather_report.md
+compressed_text.md
+status_report.md
+item_report.md
+addressed_message.md
+```

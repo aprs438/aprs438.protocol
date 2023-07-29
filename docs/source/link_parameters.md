@@ -28,7 +28,7 @@ With these settings, the symbol rate is:
 R_s = \frac{R_c}{2^{SF}} = \frac{BW}{2^{SF}} = \frac{125\,000}{2^{11}} \approx 61\,\text{symbols/s}
 ```
 
-Whereas the effective data rate $DR$ or bit rate $R_b$ can be calculated as follows:
+Whereas the effective data rate {math}`DR` or bit rate {math}`R_b` can be calculated as follows:
 
 ```{math}
 DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}
@@ -37,6 +37,8 @@ DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{
 Above parameters seem adequate for sending LoRa frames with short, compressed payloads over the next longest possible distance when the number of participant nodes is relatively low.
 
 > For an in depth tutorial slide series about LoRa (and LoRaWAN), please refer to [Mobilefish.com](https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_tutorial.html), also available in video format on [YouTube](https://youtube.com/playlist?list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g).
+
+## Why 434.100&nbsp;MHz?
 
 ## Why SF11
 Depending on how popular APRS over LoRa becomes and on how intensely it will get used,

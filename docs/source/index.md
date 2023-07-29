@@ -34,15 +34,6 @@ This document is still subject to change. Check regularly for added clarificatio
 
 ```{toctree}
 frame_compression.md
-measurable_benefits.md
-link_parameters.md
-callsign-ssid-path-data_type.md
-geolocation.md
-weather_report.md
-compressed_text.md
-status_report.md
-item_report.md
-addressed_message.md
 i-gate.md
 hardware.md
 social.md
