@@ -10,6 +10,9 @@ release = '0.5'
 version = '2023.07'
 
 # -- General configuration
+source_suffix = [
+    ".md",
+]
 
 extensions = [
     'sphinx.ext.duration',
