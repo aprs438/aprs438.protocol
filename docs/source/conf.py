@@ -11,10 +11,6 @@ version = '2023.07'
 
 # -- General configuration
 
-source_suffix = {
-    '.md': 'markdown',
-}
-
 extensions = [
     'myst_parser',
     'sphinx.ext.duration',
