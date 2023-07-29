@@ -1,4 +1,4 @@
-# The I-Gate
+# I-Gate
 
 ## No Digipeating on the Uplink Channel
 > **⚠ <u>REFRAIN</u> from digipeating on the uplink LoRa channel!**
