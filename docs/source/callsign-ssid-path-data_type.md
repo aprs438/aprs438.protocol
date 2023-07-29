@@ -89,12 +89,12 @@ Of all the _Data Types_ defined in the [APRS Protocol Reference](https://hamwave
 
 Notes:
 
-- APRS 434 will not transmit any _ID_ byte over LoRa. The _ID_ will be added at the i‑gate.
+- APRS 438 will not transmit any _ID_ byte over LoRa. The _ID_ will be added at the i‑gate.
 - Weather reports use the same _IDs_ and _Data Type Codes_ as position reports but with a _Symbol Code_ `_` overlay.
 - A _Symbol Table Identifier_ nor a _Symbol Code_ can be compressed.
 
 ## Path Codes
-The path codes are of little importance to LoRa APRS&nbsp;434.
+The path codes are of little importance to LoRa APRS&nbsp;438.
 Path codes mainly serve to instruct (VHF) APRS digipeaters.
 These digipeaters may be co‑located with a LoRa i‑gate or may obtain packets from Internet APRS‑IS.
 

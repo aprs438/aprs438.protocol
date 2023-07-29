@@ -1,7 +1,7 @@
 # Measurable Benefits
 
 ## Reduced Packet Error Rate
-**APRS&nbsp;434** geolocation beacons will encode a total of **only 18 payload bytes** at a time, tremendously **increasing the chances of a flawless reception** by an [**APRS&nbsp;434&nbsp;LoRa&nbsp;i-gate**](https://github.com/aprs434/lora.igate). Other firmware tends to consume about six times as many LoRa payload bytes.
+**APRS&nbsp;438** geolocation beacons will encode a total of **only 18 payload bytes** at a time, tremendously **increasing the chances of a flawless reception** by an [**APRS&nbsp;438&nbsp;LoRa&nbsp;i-gate**](https://github.com/aprs438/lora.igate). Other firmware tends to consume about six times as many LoRa payload bytes.
 
 LoRa may receive up to 20&nbsp;dB under the noise floor, but keep in mind that [**the packet error rate (PER)**](https://en.wikipedia.org/wiki/Bit_error_rate#Packet_error_ratio) as a function of the bit error rate (BER) [increases with the number of transmitted bits](https://en.wikipedia.org/wiki/Bit_error_rate#Packet_error_ratio).
 

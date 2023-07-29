@@ -2,7 +2,7 @@
 
 ## No Digipeating on the Uplink Channel
 > **⚠ <u>REFRAIN</u> from digipeating on the uplink LoRa channel!**
-> Since LoRa is a slow data rate mode, digipeating on the LoRa 434.100&nbsp;MHz uplink channel quickly leads to unwanted channel congestion.
+> Since LoRa is a slow data rate mode, digipeating on the LoRa 438.100&nbsp;MHz uplink channel quickly leads to unwanted channel congestion.
 > Unlike AX.25 packet radio, LoRa does not offer [carrier sensing (CS)](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access);
 > only [channel activity detection (CAD)](https://lora-developers.semtech.com/documentation/tech-papers-and-guides/channel-activity-detection-ensuring-your-lora-packets-are-sent/how-to-ensure-your-lora-packets-are-sent-properly/)
 
@@ -11,7 +11,7 @@ Also consider that:
 - LoRa was merely intended as an Internet access technology.
 - Most LoRa gateways are connected to the APRS‑IS Internet server network and many users are merely interested in reaching APRS‑IS.
 - There are hardly any, if any, low power portable LoRa devices able to display situational awareness in relation to other LoRa devices.
-- Only in extremely remote areas without Internet access, digipeating may be considered, but only on the downlink channel 434.300&nbsp;MHz.
+- Only in extremely remote areas without Internet access, digipeating may be considered, but only on the downlink channel 438.300&nbsp;MHz.
 
 Hence, below `n-N` paradigm paths could be interpreted foremost as crossover AX.25 packet digipeating paths for any (VHF) digipeater co‑located with the LoRa (i‑)gate.
 

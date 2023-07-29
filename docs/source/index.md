@@ -1,12 +1,12 @@
-# APRS 434
+# APRS 438
 
-```{image} /images/aprs434.logo.png
-:alt: APRS 434 logo
+```{image} /images/aprs438.logo.png
+:alt: APRS 438 logo
 :width: 160px
 :align: left
 ```
-Welcome to the home of **APRS&nbsp;434**,
-the 434&nbsp;MHz LoRa APRS amateur radio project that **extends range by saving bytes.**
+Welcome to the home of **APRS&nbsp;438**,
+the 438&nbsp;MHz LoRa APRS amateur radio project that **extends range by saving bytes.**
 
 Unlike some other ham radio LoRa APRS projects,
 this project aims at **deploying LoRa the way it was intended;**

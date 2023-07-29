@@ -1,9 +1,9 @@
-# APRS 434 LoRa Link Parameters
-The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp;434:
+# APRS 438 LoRa Link Parameters
+The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp;438:
 
 |LoRa parameter|uplink|downlink|
 |:------------:|:----:|:------:|
-|Region&nbsp;I&nbsp;&&nbsp;II frequency|434.100&nbsp;MHz|434.300&nbsp;MHz|
+|Region&nbsp;I&nbsp;&&nbsp;II frequency|438.100&nbsp;MHz|438.300&nbsp;MHz|
 |use|APRS‑IS&nbsp;uplink&nbsp;access & client‑to‑client|i‑gate&nbsp;downlink & digipeating for situational&nbsp;awareness|
 |SF|11|11|
 |BW|125&nbsp;000&nbsp;Hz|125&nbsp;000&nbsp;Hz|
@@ -15,7 +15,7 @@ The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp
 |[IQ](https://en.wikipedia.org/wiki/In-phase_and_quadrature_components) polarisation|normal|inversed|
 
 
-- Above proposed frequencies are outside the interfering 433—434&nbsp;MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band). Moreover, these frequencies maintain sufficient spectrum separation among one another as well as from the ubiquitous car lock keys and home weather stations on 433.920&nbsp;MHz.
+- Above proposed frequencies are outside the interfering 433—438&nbsp;MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band). Moreover, these frequencies maintain sufficient spectrum separation among one another as well as from the ubiquitous car lock keys and home weather stations on 433.920&nbsp;MHz.
 - In order to achieve a maximum range, [Semtech](https://en.wikipedia.org/wiki/Semtech) —&nbsp;the company that developed LoRa&nbsp;— recommends selecting the maximum spreading factor {math}`SF = 12`. However, SF12 is extremely slow, offering only a mere 36.6&nbsp;byte/s.
 - {math}`SF = 11` corresponds to 11&nbsp;raw bits per symbol. Therefore, each symbol (or frequency chirp) holds {math}`2^{11} = 2048\,\text{chips}`.
 - Likewise, the bandwidth is set to the smallest commonly available bandwidth among all LoRa ICs, namely {math}`BW = 125\,\text{kHz}`. This is by definition also the chip rate {math}`R_c = BW`.
@@ -38,7 +38,7 @@ Above parameters seem adequate for sending LoRa frames with short, compressed pa
 
 > For an in depth tutorial slide series about LoRa (and LoRaWAN), please refer to [Mobilefish.com](https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_tutorial.html), also available in video format on [YouTube](https://youtube.com/playlist?list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g).
 
-## Why 434.100&nbsp;MHz?
+## Why 438.100&nbsp;MHz?
 
 ## Why SF11
 Depending on how popular APRS over LoRa becomes and on how intensely it will get used,
@@ -46,7 +46,7 @@ there might come a time when the LoRa channel gets saturated.
 Unlike packet radio, LoRa has no carrier sensing capability.
 Sending longer text messages, even when compressed, may aggravate the situation.
 
-In order to prevent such a congestion, APRS&nbsp;434 decided to **only employ SF11.**
+In order to prevent such a congestion, APRS&nbsp;438 decided to **only employ SF11.**
 
 Doing so, effectively doubles the data rate over SF12.
 It also saves 50% on airtime and batteries.
