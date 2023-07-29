@@ -11,6 +11,10 @@ version = '2023.07'
 
 # -- General configuration
 
+source_suffix = {
+    '.md': 'markdown',
+}
+
 extensions = [
     'myst_parser',
     'sphinx.ext.duration',
@@ -34,10 +38,6 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['images']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
-
-# -- Main file
-master_doc = 'index'
