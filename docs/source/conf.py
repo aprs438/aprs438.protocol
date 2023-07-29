@@ -38,3 +38,6 @@ html_static_path = ['images']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- Main file
+master_doc = 'index'
