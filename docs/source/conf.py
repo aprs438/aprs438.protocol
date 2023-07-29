@@ -10,17 +10,14 @@ release = '0.5'
 version = '2023.07'
 
 # -- General configuration
-source_suffix = [
-    ".md",
-]
 
 extensions = [
+    'myst_parser',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'myst_parser',
 ]
 
 myst_enable_extensions = [
@@ -37,6 +34,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ['images']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
