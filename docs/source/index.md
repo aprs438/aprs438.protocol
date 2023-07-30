@@ -29,7 +29,7 @@ for LoRa, _or any other data link with an extended character set._
 ESP32 [**tracker, text terminal and i‑gate firmware**](#esp32-firmware-downloads) adhering to these compression protocols is provided as well.
 
 :::{attention}
-This document is still subject to change. Check regularly for added clarifications and minor changes.
+This document is still subject to change. Check regularly for changes and added clarifications.
 :::
 
 ```{toctree}
