@@ -33,6 +33,7 @@ This document is still subject to change. Check regularly for added clarificatio
 :::
 
 ```{toctree}
+link_parameters.md
 frame_compression.md
 i-gate.md
 hardware.md

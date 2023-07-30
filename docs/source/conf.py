@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'APRS 434'
+project = 'APRS 438'
 copyright = '2022-2023, CC BY 4.0, Serge Y. Stroobandt, ON4AA'
 author = 'Serge Y. Stroobandt, ON4AA'
 

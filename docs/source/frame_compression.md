@@ -22,7 +22,6 @@ As a physical layer, LoRa permits sending any of the [256 characters](https://en
 
 ```{toctree}
 measurable_benefits.md
-link_parameters.md
 callsign-ssid-path-data_type.md
 geolocation.md
 weather_report.md
