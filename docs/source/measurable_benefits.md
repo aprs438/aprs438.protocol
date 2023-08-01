@@ -18,6 +18,8 @@ approximately, when {math}`BER` is small and {math}`n` is large, and where:
 When used with an explicit header, LoRa packets will have the following 36&nbsp;bit overhead:
 a 16&nbsp;bit physical header `PHDR`, 4&nbsp;bits of header [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) `PHDR_CRC` and another 16&nbsp;bits of payload `CRC`.
 
+Assuming a bit error rate {math}`BER` of one in thousand, results in the following packet error rates:
+
 |payload|17 bytes|24 bytes|28 bytes|45 bytes|113 bytes|
 |:-----:|:------:|:------:|:------:|:------:|:-------:|
 |overhead|36 bits|36 bits|36 bits|36 bits|36 bits|
@@ -44,7 +46,8 @@ Reducing the airtime also **saves battery power** of portable devices.
 Due to the LoRa symbol encoding scheme, airtime reductions occur in abrupt steps of 5&nbsp;bytes when the spreading factor is SF12 and the bandwidth 125&nbsp;kHz (CR=1, explicit header, CRC=on). This is depicted as the stepped top trace on the figure below. (Adapted from [airtime-calculator](https://avbentem.github.io/airtime-calculator/ttn/eu868/4,14).)
 
 ```{figure} /images/lora.airtime-payload.18bytes.png
-**Figure 1:** The top trace is for SF12BW125. The dot represents a total payload of 17 bytes as proposed for geolocation packets with compression.
+:name: airtime
+The top trace is for SF12BW125. The dot represents a total payload of 17 bytes as proposed for geolocation packets with compression.
 ```
 
 |payload|5 bytes|17 bytes|24 bytes|28 bytes|45 bytes|113 bytes|
@@ -53,4 +56,6 @@ Due to the LoRa symbol encoding scheme, airtime reductions occur in abrupt steps
 |airtime with SF11|0.50&nbsp;s|0.66&nbsp;s|0.82&nbsp;s|0.91&nbsp;s|1.15&nbsp;s|2.46&nbsp;s|
 |airtime with SF10|0.25&nbsp;s|0.33&nbsp;s|0.37&nbsp;s|0.41&nbsp;s|0.56&nbsp;s|1.23&nbsp;s|
 
+```{seealso}
 [The Things Network (TTN)](https://www.thethingsnetwork.org) organisation, albeit a global LoRaWAN, is exemplary in stressing [the importance of maintaining LoRa payloads small](https://www.thethingsnetwork.org/docs/devices/bytes/).
+```

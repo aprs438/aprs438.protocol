@@ -1,15 +1,15 @@
 # APRS 438
 
-```{image} /images/aprs438.logo.png
+```{image} /images/aprs438.round.png
 :alt: APRS 438 logo
 :width: 160px
 :align: left
 ```
 Welcome to the home of **APRS&nbsp;438**,
-the 438&nbsp;MHz LoRa APRS amateur radio project that **extends range by saving bytes.**
+the 438&nbsp;MHz amateur radio LoRa [automatic packet reporting system](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) that **extends range by saving bytes.**
 
-Unlike some other ham radio LoRa APRS projects,
-this project aims at **deploying LoRa the way it was intended;**
+Unlike some other [ham radio](https://en.wikipedia.org/wiki/Amateur_radio) LoRa APRS projects,
+this project aims at **deploying [LoRa](https://en.wikipedia.org/wiki/LoRa) the way it was intended;**
 namely by being frugal about the number of bytes put on air.
 Doing so, reaps a number of benefits:
 <br clear="all"/>
@@ -22,11 +22,20 @@ Doing so, reaps a number of benefits:
 - therefore, more channel capacity.
 
 In dense urban environments and/or on flat terrain, LoRa works best when the data payload is kept to a strict minimum.
-This can be achieved taking full advantage of all 256 characters available for transmission with LoRa.
+This can be achieved by taking full advantage of all 256 characters available for transmission with LoRa.
 The APRS frame compression protocols presented below aim precisely at doing that;
 for LoRa, _or any other data link with an extended character set._
 
-ESP32 [**tracker, text terminal and i‑gate firmware**](#esp32-firmware-downloads) adhering to these compression protocols is provided as well.
+ESP32 firmware adhering to these compression protocols is provided as well:
+
+- GPS-tracker documentation
+- text terminal documentation
+- i-gate documentation
+
+:::{caution}
+Unlike the vast majority of [other LoRa projects](https://thethingsnetwork.org), the firmware of this project employs **licensed frequency spectrum** exclusive to the use of [amateur radio](https://en.wikipedia.org/wiki/Amateur_radio). **You need a valid amateur radio license to be able to use APRS 438 firmware.**
+Contact your national government or local amateur radio club to find out how to obtain an amateur radio license.
+:::
 
 :::{attention}
 This document is still subject to change. Check regularly for changes and added clarifications.

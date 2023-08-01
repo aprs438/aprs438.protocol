@@ -1,9 +1,11 @@
 # Link Parameters
 The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp;438:
 
+:::{table}link parameters
+
 |LoRa parameter|uplink|downlink|
 |:------------:|:----:|:------:|
-|frequency|438.025&nbsp;MHz|439.625&nbsp;MHz|
+|frequency|438.0375&nbsp;MHz|439.5375&nbsp;MHz|
 |use|APRS‑IS&nbsp;uplink&nbsp;access & client‑to‑client|i‑gate&nbsp;downlink & digipeating for situational&nbsp;awareness|
 |SF|11|11|
 |BW|125&nbsp;000&nbsp;Hz|125&nbsp;000&nbsp;Hz|
@@ -13,6 +15,7 @@ The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp
 |header mode|explicit (20&nbsp;bits)|explicit (20&nbsp;bits)|
 |[CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)|on (16&nbsp;bits)|on (16&nbsp;bits)|
 |[IQ](https://en.wikipedia.org/wiki/In-phase_and_quadrature_components) polarisation|normal|inversed|
+:::
 
 - Above proposed frequencies are outside the interfering 433—435&nbsp;MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band). Moreover, these frequencies maintain sufficient spectrum separation among one another as well as from the ubiquitous car lock keys and home weather stations on 433.920&nbsp;MHz.
 - In order to achieve a maximum range, [Semtech](https://en.wikipedia.org/wiki/Semtech) —&nbsp;the company that developed LoRa&nbsp;— recommends selecting the maximum spreading factor {math}`SF = 12`. However, SF12 is extremely slow, offering only a mere 36.6&nbsp;byte/s.
@@ -39,25 +42,7 @@ Above parameters seem adequate for sending LoRa frames with short, compressed pa
 For an in depth tutorial slide series about LoRa (and LoRaWAN), please refer to [Mobilefish.com](https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_tutorial.html), also available in video format on [YouTube](https://youtube.com/playlist?list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g).
 :::
 
-## Why 438&nbsp;MHz and Up
-
-## Why SF11
-Depending on how popular APRS over LoRa becomes and on how intensely it will get used,
-there might come a time when the LoRa channel gets saturated.
-Unlike packet radio, LoRa has no carrier sensing capability.
-Sending longer text messages, even when compressed, may aggravate the situation.
-
-In order to prevent such a congestion, APRS&nbsp;438 decided to **only employ SF11.**
-
-Doing so, effectively doubles the data rate over SF12.
-It also saves 50% on airtime and batteries.
-The slight range penalty from switching from SF12 to SF11 is in most circumstances absolutely acceptable,
-provided the availability of i‑gates in an area is sufficient.
-
-With a payload of only 17&nbsp;bytes, the compressed geolocation frame is perfectly geared towards
-taking advantage of the reduced airtime offered by SF11 (see [graph](#airtime-reduction)).
-
-Unfortunately, most cheap i‑gates currently in use by ham operators are only capable of receiving one preset spreading factor.
-Therefore, the choice was made to use SF11 exclusively.
-Considering what some members of the amateur radio community have come to expect of LoRa,
-the faster data rate offered by SF11 is more than warranted.
+```{toctree}
+why_438.md
+why_sf11.md
+```
