@@ -20,23 +20,19 @@ The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp
 :::
 
 - Above proposed frequencies are outside the interfering 433—435&nbsp;MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band). Moreover, these frequencies maintain sufficient spectrum separation among one another as well as from the ubiquitous car lock keys and home weather stations on 433.920&nbsp;MHz.
-- In order to achieve a maximum range, [Semtech](https://en.wikipedia.org/wiki/Semtech) —&nbsp;the company that developed LoRa&nbsp;— recommends selecting the maximum spreading factor {math}`SF = 12`. However, SF12 is extremely slow, offering only a mere 36.6&nbsp;byte/s.
-- {math}`SF = 11` corresponds to 11&nbsp;raw bits per symbol. Therefore, each symbol (or frequency chirp) holds {math}`2^{11} = 2048\,\text{chips}`.
-- Likewise, the bandwidth is set to the smallest commonly available bandwidth among all LoRa ICs, namely {math}`BW = 125\,\text{kHz}`. This is by definition also the chip rate {math}`R_c = BW`.
-- To avoid any further overhead in an already slow mode, the [forward error correction (FEC)](https://en.wikipedia.org/wiki/Error_correction_code#Forward_error_correction) coding rate is kept at {math}`CR = 1`, which corresponds to {math}`\frac{data}{data + FEC} = \frac{4}{5}`.
+- In order to achieve a maximum range, [Semtech](https://en.wikipedia.org/wiki/Semtech) —&nbsp;the company that developed LoRa&nbsp;— recommends selecting the maximum spreading factor $SF = 12$. However, SF12 is extremely slow, offering only a mere 36.6&nbsp;byte/s.
+- $SF = 11$ corresponds to 11&nbsp;raw bits per symbol. Therefore, each symbol (or frequency chirp) holds $2^{11} = 2048\,\text{chips}$.
+- Likewise, the bandwidth is set to the smallest commonly available bandwidth among all LoRa ICs, namely $BW = 125\,\text{kHz}$. This is by definition also the chip rate $R_c = BW$.
+- To avoid any further overhead in an already slow mode, the [forward error correction (FEC)](https://en.wikipedia.org/wiki/Error_correction_code#Forward_error_correction) coding rate is kept at $CR = 1$, which corresponds to $\frac{data}{data + FEC} = \frac{4}{5}$.
 - It was observed that amateur radio predominantly employs the LoRa sync word `0x12`; which is manufacturer recommended for private networks, and differs from LoRaWAN.
 
 With these settings, the symbol rate is:
 
-```{math}
-R_s = \frac{R_c}{2^{SF}} = \frac{BW}{2^{SF}} = \frac{125\,000}{2^{11}} \approx 61\,\text{symbols/s}
-```
+$$R_s = \frac{R_c}{2^{SF}} = \frac{BW}{2^{SF}} = \frac{125\,000}{2^{11}} \approx 61\,\text{symbols/s}$$
 
-Whereas the effective data rate {math}`DR` or bit rate {math}`R_b` can be calculated as follows:
+Whereas the effective data rate $DR$ or bit rate $R_b$ can be calculated as follows:
 
-```{math}
-DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}
-```
+$$DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}$$
 
 Above parameters seem adequate for sending LoRa frames with short, compressed payloads over the next longest possible distance when the number of participant nodes is relatively low.
 

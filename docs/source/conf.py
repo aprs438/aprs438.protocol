@@ -9,7 +9,8 @@ author = 'Serge Y. Stroobandt, ON4AA'
 release = ''
 version = '2023.07'
 
-# -- General configuration
+
+# -- Sphinx configuration
 
 extensions = [
     'myst_parser',
@@ -19,10 +20,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-]
-
-myst_enable_extensions = [
-    'colon_fence',
 ]
 
 intersphinx_mapping = {
@@ -35,7 +32,29 @@ templates_path = ['_templates']
 
 numfig = True
 
+
+# -- MyST configuration
+# https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
+# https://jupyterbook.org/en/stable/reference/cheatsheet.html
+
+myst_enable_extensions = [
+    'attrs_inline',
+    'attrs_block',
+    'colon_fence',
+    'deflist',
+    'dollarmath',
+    'fieldlist',
+    'replacements',
+    'strikethrough',
+]
+
+myst_dmath_allow_space = False
+myst_dmath_allow_digits = False
+myst_heading_anchors = 3
+
+
 # -- Options for HTML output
+
 html_last_updated_fmt = '%Y-%m-%d'
 html_static_path = ['_static']
 
@@ -55,5 +74,7 @@ favicons = [
     'safari-pinned-tab.svg',
 ]
 
+
 # -- Options for EPUB output
+
 epub_show_urls = 'footnote'

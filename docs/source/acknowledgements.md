@@ -9,7 +9,7 @@
 - Peter Buchegger, OE5BPA, for providing a tracker and i‑gate firmware as open source code, in a handy [PlatformIO](https://platformio.org) environment, with [over-the-air (OTA)](https://en.wikipedia.org/wiki/Over-the-air_programming) i‑gate updates. This was the ideal starting point for running LoRa frame compression experiments.
 
 - Wolfgang Hallmann, DF7PN, for informing that, in a number of European countries, the ISM‑band extends from 433.05 to 434.79&nbsp;MHz.
-- Gerhard Hickl, OE3GHB, for pointing out that, in Austria, the spectrum above 439.1&nbsp;MHz is receive only. 
+- Gerhard Hickl, OE3GHB, for pointing out that, in Austria, the spectrum above 439.1&nbsp;MHz is receive only.
 
 - Greg Stroobandt, ON3GR, for cycling around the city with a privacy invading tracker
 
@@ -20,4 +20,4 @@
 - [ReadTheDocs.org](https://readthedocs.org/) for hosting the documentation of this project, free of charge
 - [Github.com](https://github.com/) for hosting the project source files, free of charge
 - The [Sphinx](https://www.sphinx-doc.org/en/master/) documentation generator and its [extensions](https://sphinx-extensions.readthedocs.io/en/latest/)
-- The Markedly Structured Text parser [MyST](https://myst-parser.readthedocs.io/en/stable/index.html)
+- The Markedly Structured Text parser [MyST](https://myst-parser.readthedocs.io/en/stable/index.html) ([cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html))

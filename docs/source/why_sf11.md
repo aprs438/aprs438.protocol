@@ -12,7 +12,7 @@ The slight range penalty from switching from SF12 to SF11 is in most circumstanc
 provided the availability of i‑gates in an area is sufficient.
 
 With a payload of only 17&nbsp;bytes, the compressed geolocation frame is perfectly geared towards
-taking advantage of the reduced airtime offered by SF11 (see [graph](#fig-airtime)).
+taking advantage of the reduced airtime offered by SF11 (see {numref}`fig-airtime-payload`).
 
 Unfortunately, most cheap i‑gates currently in use by ham operators are only capable of receiving one preset spreading factor.
 Therefore, the choice was made to use SF11 exclusively.
