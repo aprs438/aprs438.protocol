@@ -1,7 +1,7 @@
 # Link Parameters
 The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp;438:
 
-:::{table} Link parameters
+:::{table} APRS 438 link parameters
 :name: table-link-parameters
 
 |LoRa parameter|uplink|downlink|
