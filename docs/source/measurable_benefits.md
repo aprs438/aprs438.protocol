@@ -46,7 +46,7 @@ Reducing the airtime also **saves battery power** of portable devices.
 Due to the LoRa symbol encoding scheme, airtime reductions occur in abrupt steps of 5&nbsp;bytes when the spreading factor is SF12 and the bandwidth 125&nbsp;kHz (CR=1, explicit header, CRC=on). This is depicted as the stepped top trace on the figure below. (Adapted from [airtime-calculator](https://avbentem.github.io/airtime-calculator/ttn/eu868/4,14).)
 
 ```{figure} /images/lora.airtime-payload.18bytes.png
-:name: airtime
+:name: fig-airtime
 The top trace is for SF12BW125. The dot represents a total payload of 17 bytes as proposed for geolocation packets with compression.
 ```
 
