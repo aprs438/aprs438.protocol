@@ -7,12 +7,14 @@ Furthermore, **the compressed frame length is voluntarily limited by design to a
 For certain _Data Types,_ the maximum length is even significantly lower.
 A maximum frame length of 45&nbsp;bytes corresponds to a **maximum airtime of 2.14&nbsp;s with SF12 or 1.15&nbsp;s with SF11.**
 
+:::{important}
 I‑gates should test whether the payload length of a received frame is in correspondence to the declared _Data Type_.
 Frames that do not comply, should be rejected.
 
 The combination of the four first `CCCC` Base256 _Callsign_ bytes and the in `D` declared _Data Type_ with the corresponding payload length form the key —so to speak— to the i‑gate.
 This is what allows for a headerless frame design.
 It prevents the i‑gate from relaying frames that are not intended for this compressed frame link.
+:::
 
 |_Callsign_|_SSID_,<br/>_Path Code_&nbsp;&<br/>_Data Type Code_|_Compressed Data_|
 |:--------:|:-------------------------------------------------:|:---------------:|
@@ -87,16 +89,17 @@ Of all the _Data Types_ defined in the [APRS Protocol Reference](https://hamwave
 |[**item report**](#compressed-item-report-frames) — with compressed geolocation|`)`|2|20—24 bytes|
 |[**addressed message**](#compressed-addressed-message-frames) (≤&nbsp;51&nbsp;characters)|`:`|3|10—45 bytes|
 
-Notes:
-
+:::{note}
 - APRS 438 will not transmit any _ID_ byte over LoRa. The _ID_ will be added at the i‑gate.
 - Weather reports use the same _IDs_ and _Data Type Codes_ as position reports but with a _Symbol Code_ `_` overlay.
 - A _Symbol Table Identifier_ nor a _Symbol Code_ can be compressed.
+:::
 
 ## Path Codes
 The path codes are of little importance to LoRa APRS&nbsp;438.
 Path codes mainly serve to instruct (VHF) APRS digipeaters.
 These digipeaters may be co‑located with a LoRa i‑gate or may obtain packets from Internet APRS‑IS.
+See also {ref}`no-digipeating`.
 
 |station|recommended `n-N` paradigm path|_Path Code_|
 |:-----:|:-----------------------------:|:---------:|
@@ -107,8 +110,7 @@ These digipeaters may be co‑located with a LoRa i‑gate or may obtain packets
 |extremely remote mobile|`WIDE1-1,WIDE2-2`|N/A|
 |space satellites|`ARISS,WIDE2-1`|3|
 
-Note:
-
+:::{note}
 - The first `n` digit in `n-N` paradigm paths indicates the coverage level of the digipeater, whereby `1` is for local fill‑in digipeaters and `2` is for county-level digipeaters.
 - The second `N` digit indicates the number of repeats at the indicated coverage level.
-
+:::

@@ -12,6 +12,7 @@ I-gates will, <u>in the listed order of priority</u>, and with respect for the r
 When the downlink channel gets saturated, above listed order of priority applies.
 
 
+(no-digipeating)=
 ## No Digipeating on the Uplink
 :::{caution}
 **<u>REFRAIN</u> from digipeating on the uplink frequency!**
