@@ -21,10 +21,9 @@ Doing so, reaps a number of benefits:
 - lower probability of packet collisions,
 - therefore, more channel capacity.
 
-In dense urban environments and/or on flat terrain, LoRa works best when the data payload is kept to a strict minimum.
+In dense urban environments and/or on flat terrain, **LoRa works best when the data payload is kept to a strict minimum.**
 This can be achieved by taking full advantage of all 256 characters available for transmission with LoRa.
-The APRS frame compression protocols presented below aim precisely at doing that;
-for LoRa, _or any other data link with an extended character set._
+The APRS frame compression protocols presented in this [white paper](https://en.wikipedia.org/wiki/White_paper) aim precisely at doing that; for LoRa, _or any other data link with an extended character set._
 
 ESP32 firmware adhering to these compression protocols is provided as well:
 

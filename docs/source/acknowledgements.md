@@ -20,4 +20,4 @@
 - [ReadTheDocs.org](https://readthedocs.org/) for hosting the documentation of this project, free of charge
 - [Github.com](https://github.com/) for hosting the project source files, free of charge
 - The [Sphinx](https://www.sphinx-doc.org/en/master/) documentation generator and its [extensions](https://sphinx-extensions.readthedocs.io/en/latest/)
-- The Markedly Structured Text parser [MyST](https://myst-parser.readthedocs.io/en/stable/index.html) ([cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html))
+- [executable{books}](https://executablebooks.org/en/latest/) for the Markedly Structured Text [MyST Python parser](https://myst-parser.readthedocs.io/en/stable/index.html) ([cheat sheet](https://jupyterbook.org/en/stable/reference/cheatsheet.html), [syntax extensions](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html))

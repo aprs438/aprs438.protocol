@@ -9,7 +9,7 @@ In order to prevent such a congestion, APRS&nbsp;438 decided to **only employ SF
 Doing so, effectively doubles the data rate over SF12.
 It also saves 50% on airtime and batteries.
 The slight range penalty from switching from SF12 to SF11 is in most circumstances absolutely acceptable,
-provided the availability of i‑gates in an area is sufficient.
+provided the density of i‑gates in an area is sufficient.
 
 With a payload of only 17&nbsp;bytes, the compressed geolocation frame is perfectly geared towards
 taking advantage of the reduced airtime offered by SF11 (see {numref}`fig-airtime-payload`).
