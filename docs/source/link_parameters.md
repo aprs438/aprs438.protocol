@@ -23,7 +23,7 @@ Above preferred frequencies are outside the interfering 433—435&nbsp;MHz [ISM 
 :::
 
 :::{attention}
-The alternative downlink frequency are only intended for those countries where amateur radio is not allowed to transmit (e.g. Austria) or has secondary status (e.g. The Netherlands) on the preferred downlink frequency. Terminal-type end devices will expose an option to select the alternative downlink.
+The alternative downlink frequency is only intended for those countries where amateur radio is not allowed to transmit (e.g. Austria) or has secondary status (e.g. The Netherlands) on the preferred downlink frequency. Terminal-type end devices will expose an option to select the alternative downlink.
 
 **I‑gates using the alternative downlink frequency are fervently advised to emit at higher power levels (e.g. 7.5&nbsp;W)** to overcome the interference caused by ISM systems.
 :::
