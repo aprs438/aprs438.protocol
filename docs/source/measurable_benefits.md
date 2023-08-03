@@ -52,26 +52,25 @@ Details about the LoRa packet structure can be found [here](https://blog.csdn.ne
 
 ## Airtime Reduction
 Keeping the payload as small as possible, has an even more important reason: to reduce the airtime required to send the LoRa frame.
-As will be shown in the [next section](#lora-link-parameters), **LoRa is a slow data rate mode.**
+As calculated in equation {eq}`eq-data-rate`, **LoRa is a slow data rate mode.**
 Reducing the airtime also **saves battery power** of portable devices.
 
 Due to the LoRa symbol encoding scheme, airtime reductions occur in abrupt steps of 5&nbsp;bytes when the spreading factor is SF12 and the bandwidth 125&nbsp;kHz (CR=1, explicit header, CRC=on). This is depicted as the stepped top trace on the figure below. (Adapted from [airtime-calculator](https://avbentem.github.io/airtime-calculator/ttn/eu868/4,14).)
 
-```{figure} /images/lora.airtime-payload.18bytes.png
+:::{figure} /images/lora.airtime-payload.18bytes.png
 :name: fig-airtime-payload
 The top trace is for SF12BW125. The dot represents a total payload of 17 bytes as proposed for geolocation packets with compression.
-```
+:::
 
-```{table} Airtime of common payloads as a function of spreading factor SF
-:name: table-airtime-reduction
-
+:::{table} Airtime of common payloads as a function of spreading factor SF
+:name: table-airtime
 |payload|5 bytes|17 bytes|24 bytes|28 bytes|45 bytes|113 bytes|
 |:-----:|:-----:|:------:|:------:|:------:|:------:|:-------:|
 |airtime with SF12|0.83&nbsp;s|1.32&nbsp;s|1.48&nbsp;s|1.65&nbsp;s|2.14&nbsp;s|4.43&nbsp;s|
 |airtime with SF11|0.50&nbsp;s|0.66&nbsp;s|0.82&nbsp;s|0.91&nbsp;s|1.15&nbsp;s|2.46&nbsp;s|
 |airtime with SF10|0.25&nbsp;s|0.33&nbsp;s|0.37&nbsp;s|0.41&nbsp;s|0.56&nbsp;s|1.23&nbsp;s|
-```
+:::
 
-```{seealso}
+:::{seealso}
 [The Things Network (TTN)](https://www.thethingsnetwork.org) organisation, albeit a global LoRaWAN, is exemplary in stressing [the importance of maintaining LoRa payloads small](https://www.thethingsnetwork.org/docs/devices/bytes/).
-```
+:::

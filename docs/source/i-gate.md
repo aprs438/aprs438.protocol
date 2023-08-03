@@ -4,12 +4,13 @@
 ## I-Gate Functionality
 I-gates will, <u>in the listed order of priority</u>, and with respect for the received _Path Code:_
 
-1. Keep a list of all stations heard on the uplink channel over the last hour. This implies that all clients need to send a geolocation frame or at least a status report when switched on and when not having transmitted over the course of an hour.
-2. Transmit on the downlink channel all frames heard on the uplink channel, other than addressed text messages.
-3. Transmit text messages addressed to clients it heard recently. These addressed text messages may originate from the uplink, from an attached packet APRS digipeater or from Internet APRS‑IS.
-4. Transmit situational awareness frames from an attached packet APRS digipeater or APRS‑IS, when these apply to the geographical coverage area of the i‑gate.
+1. **Reject** any received frame which payload length does not correspond to the declared _Data Type_.
+2. Keep a **list of all stations heard** on the uplink channel over the last hour. This implies that all clients need to send a geolocation frame or at least a status report when switched on and when not having transmitted over the course of an hour.
+3. Transmit on the downlink channel all frames heard on the uplink channel, **other than addressed text messages.**
+4. Transmit **text messages addressed to clients the i‑gate heard recently.** These addressed text messages may originate from the uplink, from an attached packet APRS digipeater or from Internet APRS‑IS.
+5. Transmit **situational awareness frames** from an attached packet APRS digipeater or APRS‑IS, when these are applicable to the geographical coverage area of the i‑gate.
 
-When the downlink channel gets saturated, above listed order of priority applies.
+When the downlink channel gets saturated, above listed order of priority applies in terms of dropping frames or keeping a frame wait list stack.
 
 
 (no-digipeating)=
@@ -34,5 +35,6 @@ Hence, `n-N` paradigm paths could be interpreted foremost as crossover AX.25 pac
 :::
 
 :::{hint}
-However, suppose meshing or `n-N` paradigm digipeating were to be allowed on a single LoRa channel; even for trackers. This would offer interesting emergency capabilities when no Internet is available. However, this would absolutely require switching from SF11 to the higher data rate offered by SF10 [as explained before](#considerations-for-switching-to-sf11). In such a scenario, _Path_ represents the LoRa device communicating its digipeating requirements to the mesh network.
+However, suppose meshing or `n-N` paradigm digipeating were to be allowed on a single LoRa channel; even for trackers.
+This would offer interesting emergency capabilities when no Internet is available. However, this would absolutely require switching from SF11 to the higher data rate offered by SF10, as demonstrated in {numref}`table-airtime`. In such a scenario, _Path Code_ stands for the LoRa device communicating its digipeating requirements to the mesh network.
 :::

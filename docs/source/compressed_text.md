@@ -25,5 +25,5 @@ In resemblance to Morse code, the character set would contain only 26 Latin capi
 :::{caution}
 **<u>REFRAIN</u> from adding any APRS comments!**
 Adding more bytes to a LoRa frame only reduces the chances on successful reception.
-Rather, consider sending an occasional [status report](#compressed-status-report-frames).
+Rather, consider sending an occasional [status report](#status_report).
 :::

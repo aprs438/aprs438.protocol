@@ -1,28 +1,17 @@
 # Compressed Addressed Message Frames
 Up to now, APRS has been unduly considered to be predominantly a one-way localisation technology.
-This went to the point that many mistakenly think the letter "P" in the acronym APRS would stand for "position."
+This went to the point that many would mistake the letter "P" in the APRS acronym for "position" instead of "packet."
 [Bob Bruninga WB4APR (SK)](http://www.aprs.org), the spiritual father of APRS, deeply resented this situation.
 
 > _"APRS is not a vehicle tracking system.
 > It is a two-way tactical real-time digital communications system between all assets in a network
 > sharing information about everything going on in the local area."_
 
-In Bob's view of APRS as being foremost a real-time situational and tactical tool, messaging definitely merits its place.
-One of the long-term goals is rendering APRS messaging more popular by offering messaging pager designs.
-
-Below proposal for the compression of addressed message frames is primarily intended for uplink-only messaging or
-for direct messaging without the aid of a digipeater.
-The available message length of 51 characters is largely sufficient
-for, for example, SOTA self-spotting using [APRS2SOTA](https://www.sotaspots.co.uk/Aprs2Sota_Info.php).
-
-On the other hand, two‑way messaging over a digipeater would definitely require:
-- separate up- and downlinks,
-- the faster [SF11](#considerations-for-switching-to-sf11) data mode, and
-- eventually GPS time-disciplined, dynamic [time division multiple access (TDMA)](https://en.wikipedia.org/wiki/Time-division_multiple_access) multiplexing.
-
-The formulation of such a two‑way TDMA protocol is beyond the scope of this document.
+In Bob's view of APRS as being foremost a real-time situational and tactical tool, addressed messaging definitely merits its place.
+Our goals is to render APRS messaging more popular by offering LoRa messaging pager terminals.
 
 A compressed addressed message frame has a payload of **between 10 (for an empty ping) and 45 bytes.**
+The available message length of 51 characters is largely sufficient for, for example, SOTA self-spotting using [APRS2SOTA](https://www.sotaspots.co.uk/Aprs2Sota_Info.php).
 
 |_Callsign_|_SSID_,<br/>_Path Code_&nbsp;&<br/>_Data Type Code_|_Compressed Data_|
 |:--------:|:-------------------------------------------------:|:---------------:|
@@ -33,7 +22,7 @@ where:
 
 - `CCCC`: 4 bytes for the compressed **6 character** _Callsign_
 - `D`: compresses into 1 byte:
-  + the [_SSID_](#ssid-recommendations) (between SSID 0 [none] and 15; included),
+  + the [_SSID_](#ssid) (between SSID 0 [none] and 15; included),
   + the [_Path Code_](#path-codes) (between path 0 [none] and 3; included), and
   + the [_Data Type Code_](#data-type-codes) = 3
 - `EEEE`: 4 bytes for the compressed _Addressee_ (up to 6 character callsign)

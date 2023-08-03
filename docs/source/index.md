@@ -1,10 +1,10 @@
 # APRS 438
 
-```{image} /images/aprs438.round.png
+:::{image} /images/aprs438.round.png
 :alt: APRS 438 logo
 :width: 160px
 :align: left
-```
+:::
 Welcome to the home of **APRS&nbsp;438**,
 the 438&nbsp;MHz amateur radio LoRa [automatic packet reporting system](https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System) that **extends range by saving bytes.**
 
@@ -40,12 +40,12 @@ Contact your national government or local amateur radio club to find out how to 
 This document is still subject to change. Check regularly for changes and added clarifications.
 :::
 
-```{toctree}
+:::{toctree}
 link_parameters.md
 frame_compression.md
 i-gate.md
 hardware.md
 social.md
-acknowledgements.md
 revisions.md
-```
+acknowledgements.md
+:::

@@ -26,6 +26,6 @@
 - 5&nbsp;V, 1&nbsp;A USB power supply with appropriate microUSB or USB‑C cable
 - enclosure
 
-```{caution}
+:::{caution}
 **<u>DO NOT USE</u>** Heltec ESP32 LoRa 433&nbsp;MHz **v1** as it is as deaf as a post!
-```
+:::

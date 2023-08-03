@@ -22,13 +22,13 @@ LoRa, as a physical layer, permits sending any of the [256 characters](https://e
 - If APRS Mic-E compression were to be used instead, that would require another 16 payload bytes to compress latitude, longitude, symbol, course and speed; 7&nbsp;bytes in the superfluous _Destination&nbsp;Address_ and 9&nbsp;bytes in the _Information&nbsp;Field; Data Type ID_ included. Hence, this is not a good option.
 :::
 
-```{toctree}
+:::{toctree}
 measurable_benefits.md
-callsign-ssid-path-data_type.md
+ccccd.md
 geolocation.md
 weather_report.md
 compressed_text.md
 status_report.md
 item_report.md
 addressed_message.md
-```
+:::

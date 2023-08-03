@@ -10,7 +10,7 @@ where:
 
 - `CCCC`: 4 bytes for the compressed **6 character** _Callsign_
 - `D`: compresses into 1 byte:
-  + the [_SSID_](#ssid-recommendations) (between SSID 0 [none] and 15; included),
+  + the [_SSID_](#ssid) (between SSID 0 [none] and 15; included),
   + the [_Path Code_](#path-codes) (between path 0 [none] and 3; included), and
   + the [_Data Type Code_](#data-type-codes) = 0
 - `/`: the _Symbol Table Identifier_

@@ -4,7 +4,6 @@ The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp
 :::{table} APRS 438 link parameters
 :name: table-link-parameters
 :width: 100%
-
 |LoRa parameter|uplink|downlink|alternative downlink|
 |:------------:|:----:|:------:|:------------------:|
 |frequency|438.050&nbsp;MHz|439.550&nbsp;MHz|434.425&nbsp;MHz|
@@ -42,15 +41,15 @@ $$R_s = \frac{R_c}{2^{SF}} = \frac{BW}{2^{SF}} = \frac{125\,000}{2^{11}} \approx
 
 Whereas the effective data rate $DR$ or bit rate $R_b$ can be calculated as follows:
 
-$$DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}$$
+$$DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}$$ (eq-data-rate)
 
-Above parameters seem adequate for sending LoRa frames with short, compressed payloads over the next longest possible distance when the number of participant nodes is relatively low.
+Above parameters are adequate for sending LoRa frames with short, compressed payloads over the almost longest possible distance when the number of participant nodes is relatively low.
 
 :::{seealso}
 For an in depth tutorial slide series about LoRa (and LoRaWAN), please refer to [Mobilefish.com](https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_tutorial.html), also available in video format on [YouTube](https://youtube.com/playlist?list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g).
 :::
 
-```{toctree}
+:::{toctree}
 why_438.md
 why_sf11.md
-```
+:::
