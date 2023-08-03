@@ -50,6 +50,6 @@ For an in depth tutorial slide series about LoRa (and LoRaWAN), please refer to 
 :::
 
 :::{toctree}
-why_438.md
-why_sf11.md
+438.md
+sf11.md
 :::
