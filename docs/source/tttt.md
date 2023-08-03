@@ -11,6 +11,13 @@ In resemblance to Morse code, the character set would contain only 26 Latin capi
 |symbols `-`&nbsp;`/`&nbsp;`@`|3|
 |**TOTAL**|**42**|
 
+## Base42
+Base42 consist out of the following 42 ordered digits, starting with a space character:
+
+```python
+digits = ' 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-./?@'
+```
+
 ## Encoding tttt
 1. Perform input sanitisation.
 2. Perform character replacement and filtering on the given string; only allow for characters of the [42&nbsp;character set](#compressed-text).

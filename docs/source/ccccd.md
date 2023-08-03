@@ -29,6 +29,13 @@ where:
   + the [_Path Code_](#path-codes) (between path 0 [none] and 3; included), and
   + the [_Data Type Code_](#data-type-codes) (between type 0 and 3; included)
 
+## Base37
+Base37 consist out of the following 37 ordered digits, starting with a space character:
+
+```python
+digits = ' 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+```
+
 (encoding-cccc)=
 ## Encoding CCCC
 1. Perform input sanitisation and right padding with spaces up to 6 characters.
