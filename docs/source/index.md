@@ -46,6 +46,7 @@ frame_compression.md
 i-gate.md
 revisions.md
 road_map.md
+future_plans.md
 firmware.md
 hardware.md
 social.md
