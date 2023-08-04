@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'APRS 438 Protocol'
-copyright = 'CC BY 4.0, Serge Y. Stroobandt, ON4AA'
+copyright = 'CC-BY 4.0, Serge Y. Stroobandt, ON4AA'
 author = 'Serge Y. Stroobandt, ON4AA'
 
 release = ''

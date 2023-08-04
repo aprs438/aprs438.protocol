@@ -1,3 +1,4 @@
+(link-parameters)=
 # Link Parameters
 The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp;438:
 

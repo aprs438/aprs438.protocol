@@ -27,8 +27,8 @@ The APRS frame compression protocols presented in this [white paper](https://en.
 
 ESP32 firmware adhering to these compression protocols is provided as well:
 
-- GPS-tracker documentation
-- terminal documentation
+- Tracker documentation
+- Terminal documentation
 - i-gate documentation
 
 :::{caution}
@@ -45,6 +45,8 @@ link_parameters.md
 frame_compression.md
 i-gate.md
 revisions.md
+road_map.md
+firmware.md
 hardware.md
 social.md
 acknowledgements.md

@@ -31,4 +31,5 @@ tttt.md
 status_report.md
 item_report.md
 addressed_message.md
+codec.md
 :::

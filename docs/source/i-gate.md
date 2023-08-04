@@ -5,9 +5,9 @@
 I-gates will, <u>in the listed order of priority</u>, and with respect for the received _Path Code:_
 
 1. **Reject** any received frame which payload length does not correspond to the declared _Data Type_.
-2. Keep a **list of all stations heard** on the uplink channel over the last hour. This implies that all clients need to send a geolocation frame or at least a status report when switched on and when not having transmitted over the course of an hour.
+2. Keep a **list of all stations heard** on the uplink channel over the last hour. This implies that all end devices need to send a geolocation frame or at least a status report when switched on and when not having transmitted over the course of an hour.
 3. Transmit on the downlink channel all frames heard on the uplink channel, **other than addressed text messages.**
-4. Transmit **text messages addressed to clients the i‑gate heard recently.** These addressed text messages may originate from the uplink, from an attached packet APRS digipeater or from Internet APRS‑IS.
+4. Transmit **text messages addressed to end devices the i‑gate heard recently.** These addressed text messages may originate from the uplink, from an attached packet APRS digipeater or from Internet APRS‑IS.
 5. Transmit **situational awareness frames** from an attached packet APRS digipeater or APRS‑IS, when these are applicable to the geographical coverage area of the i‑gate.
 
 When the downlink channel gets saturated, above listed order of priority applies in terms of dropping frames or keeping a frame wait list stack.
