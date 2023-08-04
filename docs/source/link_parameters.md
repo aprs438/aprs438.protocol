@@ -1,4 +1,3 @@
-(link-parameters)=
 # Link Parameters
 The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp;438:
 
@@ -24,7 +23,7 @@ mostly respect the [IARU Region 1 70&nbsp;cm band plan](https://www.iaru-r1.org/
 :::
 
 :::{attention}
-The alternative downlink frequency is only intended for those countries where amateur radio is not allowed to transmit (e.g. Austria) or has secondary status (e.g. The Netherlands) on the preferred downlink frequency. Terminal-type end devices will expose an option to select the alternative downlink.
+The alternative downlink frequency is only intended for those countries where amateur radio is not allowed to transmit (e.g. Austria) or has secondary status (e.g. The Netherlands) on the preferred downlink frequency. **Terminal-type end devices will expose an option to select the alternative downlink.**
 
 **I‑gates using the alternative downlink frequency are fervently advised to emit at higher power levels (e.g. 7.5&nbsp;W)** to overcome the interference caused by ISM systems.
 :::

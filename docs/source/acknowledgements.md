@@ -7,7 +7,7 @@
 - Peter Buchegger, OE5BPA, for providing a tracker and i‑gate firmware as open source code, in a handy [PlatformIO](https://platformio.org) environment, with [over-the-air (OTA)](https://en.wikipedia.org/wiki/Over-the-air_programming) i‑gate updates. This was the ideal starting point for running LoRa frame compression experiments.
 
 ## Codec
-- Folkert Tijdens, PA0FOT, for contributing [`compression.cpp`](code/codec.cpp) and asking the right questions, rendering this document more scholarly
+- Folkert Tijdens, PA0FOT, for contributing [`compression.cpp`](#codec-c) and asking the right questions, rendering this document more scholarly
 - Matthias Brändli, HB9EGM, for contributing the Arduino C implementation of the `tttt` codec algorithm.
 - Pascal Schiks, PA3FKM, for providing insights about microcontroller stacks
 

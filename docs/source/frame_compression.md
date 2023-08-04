@@ -1,7 +1,7 @@
 # APRS Frame Compression
 LoRa, as a physical layer, permits sending any of the [256 characters](https://en.wikipedia.org/wiki/Extended_ASCII) from `\00` to `\ff`; double the amount of the [7‑bit, 128 ASCII character set](https://en.wikipedia.org/wiki/ASCII#Character_set). [AX.25](https://en.wikipedia.org/wiki/AX.25) ([packet radio](https://en.wikipedia.org/wiki/Packet_radio)) unnumbered information (UI) frames at the [data link layer](https://en.wikipedia.org/wiki/Data_link_layer) are no different in this respect.
 
-However, as [previously demonstrated](#link-parameters), the effective data rate of LoRa SF11 is much slower than what can be achieved with 1200&nbsp;baud packet. Hence, the need to compress data with LoRa is more urgent. 
+However, as [previously demonstrated](#link_parameters), the effective data rate of LoRa SF11 is much slower than what can be achieved with 1200&nbsp;baud packet. Hence, the need to compress data with LoRa is more urgent. 
 
 |[AX.25](https://en.wikipedia.org/wiki/AX.25) UI frame&nbsp;field|compression opportunities|
 |:-:|:-:|
