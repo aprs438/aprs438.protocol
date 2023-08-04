@@ -52,10 +52,10 @@ Details about the LoRa packet structure can be found [here](https://blog.csdn.ne
 
 ## Airtime Reduction
 Keeping the payload as small as possible, has an even more important reason: to reduce the airtime required to send the LoRa frame.
-As calculated in equation {eq}`eq-data-rate`, **LoRa is a slow data rate mode.**
-Reducing the airtime also **saves battery power** of portable devices.
+As calculated in equation {eq}`eq-data-rate`, **LoRa SF11 is a slow data rate mode.**
+Reducing the airtime also **saves battery power** on portable devices.
 
-Due to the LoRa symbol encoding scheme, airtime reductions occur in abrupt steps of 5&nbsp;bytes when the spreading factor is SF12 and the bandwidth 125&nbsp;kHz (CR=1, explicit header, CRC=on). This is depicted as the stepped top trace on the figure below. (Adapted from [airtime-calculator](https://avbentem.github.io/airtime-calculator/ttn/eu868/4,14).)
+Due to the LoRa symbol encoding scheme, airtime reductions occur **in abrupt steps of 4 payload bytes** when the spreading factor is SF11 and the bandwidth 125&nbsp;kHz (CR=1, explicit header, CRC=on). This is depicted by the second stepped trace from the top in {numref}`fig-airtime-payload` (adapted from [airtime-calculator](https://avbentem.github.io/airtime-calculator/ttn/eu868/4,14)).
 
 :::{figure} /images/lora.airtime-payload.18bytes.png
 :name: fig-airtime-payload

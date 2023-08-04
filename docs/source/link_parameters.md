@@ -18,7 +18,8 @@ The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp
 :::
 
 :::{note}
-Above preferred frequencies are outside the interfering 433—435&nbsp;MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band).
+Above preferred frequencies are outside the interfering 433—435&nbsp;MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band) and
+mostly respect the [IARU Region 1 70&nbsp;cm band plan](https://www.iaru-r1.org/wp-content/uploads/2021/03/UHF-Bandplan.pdf).
 :::
 
 :::{attention}
@@ -29,19 +30,21 @@ The alternative downlink frequency is only intended for those countries where am
 
 :::{note}
 - In order to achieve a maximum range, [Semtech](https://en.wikipedia.org/wiki/Semtech) —&nbsp;the company that developed LoRa&nbsp;— recommends selecting the maximum spreading factor $SF = 12$. However, SF12 is extremely slow, offering only a mere 36.6&nbsp;byte/s.
-- $SF = 11$ corresponds to 11&nbsp;raw bits per symbol. Therefore, each symbol (or frequency chirp) holds $2^{11} = 2048\,\text{chips}$.
-- Likewise, the bandwidth is set to the smallest commonly available bandwidth among all LoRa ICs, namely $BW = 125\,\text{kHz}$. This is by definition also the chip rate $R_c = BW$.
+- Likewise, the bandwidth is set to the smallest commonly available bandwidth among all LoRa ICs, namely $BW = 125\,\text{kHz}$. This is by design also the chip rate $R_c = BW$.
 - To avoid any further overhead to an already slow mode, the [forward error correction (FEC)](https://en.wikipedia.org/wiki/Error_correction_code#Forward_error_correction) [code rate](https://en.wikipedia.org/wiki/Code_rate) is kept at $CR = 1$, which corresponds to $\frac{data}{data + FEC} = \frac{4}{5}$.
 - It was observed that amateur radio predominantly employs the LoRa sync word `0x12`; which is manufacturer recommended for private networks, and differs from the `0x34` for a LoRaWAN.
 :::
 
-With these settings, the symbol rate is:
+With spread‑spectrum modulation, a symbol (or chirp with LoRa) consists out of many chips.
+The spreading factor $SF$ is defined as the number of raw bits per symbol. Hence, each symbol or chirp holds $2^{SF} = 2^{11} = 2048\,\text{chips}$.
+
+This allows one to calculate the symbol rate $R_s$ from the chip rate $R_c$:
 
 $$R_s = \frac{R_c}{2^{SF}} = \frac{BW}{2^{SF}} = \frac{125\,000}{2^{11}} \approx 61\,\text{symbols/s}$$
 
-Whereas the effective data rate $DR$ or bit rate $R_b$ can be calculated as follows:
+The effective data rate $DR$ or bit rate $R_b$ can be obtained by taking into account the forward error correction:
 
-$$DR = R_b =  \frac{BW}{2^{SF}} \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}$$ (eq-data-rate)
+$$DR = R_b = R_s \cdot SF \cdot \frac{4}{4 + CR} = \frac{125\,000}{2^{11}} \cdot 11 \cdot \frac{4}{5} \approx 537\,\text{bits/s} \approx 67\,\text{byte/s}$$ (eq-data-rate)
 
 Above parameters are adequate for sending LoRa frames with short, compressed payloads over the almost longest possible distance when the number of participant nodes is relatively low.
 

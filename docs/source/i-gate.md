@@ -19,7 +19,7 @@ When the downlink channel gets saturated, above listed order of priority applies
 **<u>REFRAIN</u> from digipeating on the uplink frequency!**
 :::
 
-Since LoRa is a slow data rate mode, digipeating on the LoRa uplink channel quickly leads to unwanted channel congestion.
+Since LoRa SF11 is a slow data rate mode, digipeating on the LoRa uplink channel quickly leads to unwanted channel congestion.
 Unlike AX.25 packet radio, LoRa does not offer [carrier sensing (CS)](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access);
 only [channel activity detection (CAD)](https://lora-developers.semtech.com/documentation/tech-papers-and-guides/channel-activity-detection-ensuring-your-lora-packets-are-sent/how-to-ensure-your-lora-packets-are-sent-properly/).
 
