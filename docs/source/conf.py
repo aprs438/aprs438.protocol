@@ -7,7 +7,7 @@ copyright = 'CC-BY 4.0, Serge Y. Stroobandt, ON4AA'
 author = 'Serge Y. Stroobandt, ON4AA'
 
 release = ''
-version = '2023.07'
+version = ''
 
 
 # -- Sphinx configuration
@@ -15,6 +15,7 @@ version = '2023.07'
 extensions = [
     'myst_parser',
     'sphinx_favicon',
+    'sphinxcontrib.jquery',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
@@ -57,12 +58,13 @@ myst_heading_anchors = 3
 # -- Options for HTML output
 
 html_last_updated_fmt = '%Y-%m-%d'
-html_static_path = ['_static']
-
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'display_version': False,
 }
+
+html_static_path = ['_static', '_static/favicons']
+html_js_files = ['js/external_links.js']
 
 favicons = [
     'android-chrome-384x384.png',
