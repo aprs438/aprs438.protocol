@@ -17,7 +17,7 @@ Currently, the APRS&nbsp;434 tracker is still compatible with the i-gate develop
 :::
 
 :::{important}
-The release of frame compression will require migration to [new frequencies, SF11](#link_parameters) and use of the APRS&nbsp;438 i‑gate.
+The release of frame compression will require migration to [new frequencies, SF11](#link_parameters) and the use of the APRS&nbsp;438 i‑gate.
 :::
 
 Compressed geolocation frames are already flawlessly received by the APRS&438 terminal and being forwarded to APRS‑IS.
