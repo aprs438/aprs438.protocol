@@ -7,8 +7,9 @@ The following LoRa link parameters are proposed for amateur radio LoRa APRS&nbsp
 |LoRa parameter|uplink|downlink|alternative downlink|
 |:------------:|:----:|:------:|:------------------:|
 |frequency|438.050&nbsp;MHz|439.550&nbsp;MHz|434.425&nbsp;MHz|
+|upchirp bandwith BW|125&nbsp;kHz|125&nbsp;kHz|125&nbsp;kHz|
+|spectrum|438.050--438.175&nbsp;MHz|439.550--439.675&nbsp;MHz|434.425--434.550&nbsp;MHz|
 |spreading factor SF|11|11|11|
-|bandwith BW|125&nbsp;kHz|125&nbsp;kHz|125&nbsp;kHz|
 |code rate [CR](https://en.wikipedia.org/wiki/Code_rate)|1 (5/4)|1 (5/4)|1 (5/4)|
 |preamble sync length|8&nbsp;symbols|8&nbsp;symbols|8&nbsp;symbols|
 |preamble sync&nbsp;word|`0x12`|`0x12`|`0x12`|

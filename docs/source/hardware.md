@@ -1,4 +1,4 @@
-# Recommended Hardware
+# Hardware
 
 ## LoRa ICs and Modules
 - [Semtech LoRa products](https://www.semtech.com/lora/lora-products)

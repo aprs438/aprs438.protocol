@@ -1,6 +1,6 @@
 # APRS 438
 
-:::{image} /images/aprs438.round.png
+:::{image} /images/aprs438.round.420px.png
 :alt: APRS 438 logo
 :width: 160px
 :align: left

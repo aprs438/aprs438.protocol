@@ -32,7 +32,12 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 numfig = True
-
+numfig_format = {
+    'code-block': 'Listing %s',
+    'sections': 'Section %s',
+    'figure': 'Figure %s',
+    'table': 'Table %s',
+}
 
 # -- MyST configuration
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
@@ -56,7 +61,6 @@ myst_heading_anchors = 3
 
 
 # -- Options for HTML output
-
 html_last_updated_fmt = '%Y-%m-%d'
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
@@ -64,6 +68,7 @@ html_theme_options = {
 }
 
 html_static_path = ['_static', '_static/favicons']
+html_css_files = ['custom.css']
 html_js_files = ['js/external_links.js']
 
 favicons = [
