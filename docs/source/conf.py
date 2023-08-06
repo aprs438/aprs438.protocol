@@ -11,6 +11,9 @@ version = ''
 
 
 # -- Sphinx configuration
+# https://github.com/sphinx-doc/sphinx/issues/11483
+def setup(app):
+    app.set_html_assets_policy('always')
 
 extensions = [
     'myst_parser',
