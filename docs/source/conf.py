@@ -32,7 +32,8 @@ intersphinx_mapping = {
     'protocol': ('https://aprs438.readthedocs.io/en/latest/', None),
 }
 intersphinx_disabled_domains = ['std']
-myst_url_schemes=["http", "https", "mailto"]
+intersphinx_disabled_reftypes = ['*']
+myst_url_schemes=['http', 'https', 'mailto']
 
 templates_path = ['_templates']
 
