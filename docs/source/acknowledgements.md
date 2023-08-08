@@ -12,7 +12,7 @@
 - Matthias Brändli, HB9EGM, for contributing the Arduino C implementation of the `tttt` codec algorithm.
 - Pascal Schiks, PA3FKM, for providing insights about microcontroller stacks
 
-## Frequency Selection
+## Spectrum Selection
 - Wolfgang Hallmann, DF7PN, for informing that, in a number of European countries, the ISM‑band extends from 433.05 to 434.79&nbsp;MHz.
 - Gerhard Hickl, OE3GHB, for pointing out that, in Austria, the spectrum above 439.1&nbsp;MHz is receive only.
 

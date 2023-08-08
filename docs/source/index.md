@@ -27,9 +27,9 @@ The APRS frame compression protocols presented in this [white paper](https://en.
 
 ESP32 firmware adhering to these compression protocols is provided as well:
 
-- [Tracker](https://aprs438-terminal.readthedocs.io/en/latest/index.html) documentation
-- Terminal documentation
-- i-gate documentation
+- [Terminal](https://aprs438-terminal.readthedocs.io/en/latest/index.html) documentation
+- [Tracker](https://aprs438-tracker.readthedocs.io/en/latest/index.html) documentation
+- [i-gate](https://aprs438-i-gate.readthedocs.io/en/latest/index.html) documentation
 
 :::{caution}
 Unlike the vast majority of [other LoRa projects](https://thethingsnetwork.org), the firmware of this project employs **licensed frequency spectrum** exclusive to the use of [amateur radio](https://en.wikipedia.org/wiki/Amateur_radio). **You need a valid amateur radio license to be able to use APRS 438 firmware.**
