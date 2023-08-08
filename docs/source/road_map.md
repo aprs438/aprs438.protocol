@@ -29,7 +29,7 @@ Currently under development.
 
 ![](/images/tui.read_msg.jpg)
 
-Ricardo Guzman Christie, CD2RXU, brought this project in a well advanced stage.
+Ricardo Guzmán Christie, CD2RXU, brought this project in a well advanced stage.
 Together with Matthias Brändli, HB9EGM, both are now working on the ESP32 Arduino C++ implementation of the text compression algorithm.
 
 
